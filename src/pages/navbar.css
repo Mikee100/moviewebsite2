@@ -1,0 +1,86 @@
+
+
+.nav{
+    position: absolute;
+    margin: 0;
+    background-color: black;
+  top:0;
+  height: 5rem;
+  width: 100%;
+  opacity: .5;
+color: white;
+}
+
+.nav ul{
+   
+    list-style-type: none;
+    height: 5rem;
+    width: 100%;
+   top:0.6rem;
+    position: absolute;
+    display: flex;
+   
+   
+}
+.nav li{
+    position: relative;
+
+    margin: 10px;
+    left: 12rem;
+    top:1rem;
+    font-size: 0.9rem;
+    
+}
+
+.nav h3{
+    position: absolute;
+    color: rgb(255, 0, 0);
+    font-size: 2.5rem;
+    top:1rem;
+    left: 4rem;
+}
+.bellfa{
+    position: absolute;
+    left:73rem;
+    top:2rem;
+    font-size: 1.6rem;
+    cursor:pointer;
+
+}
+.searchengine{
+    position: absolute;
+
+    height:3rem;
+    top: 1.5rem;
+    width: 15rem;
+    display: flex;
+    left: 57rem;
+    
+
+}
+.searchfa{
+    position: absolute;
+    top:0.5rem;
+    left:13rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: white;
+    transition: .8s;
+}
+.searchbox{
+    position: absolute;
+    left:0rem;
+    top:0rem;
+  outline: none;
+    height: 2rem;
+    width: 0;
+    background: transparent;
+    transition: .8s;
+    border-radius: 6px;
+}
+.searchengine:hover .searchbox{
+    width: 15rem;
+}
+.searchengine:hover .searchfa{
+    left:1rem;
+}
