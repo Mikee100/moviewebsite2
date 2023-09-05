@@ -92,39 +92,90 @@
 
 
 /* ************ movies arranged**********************************/
-.movies_arrange{
+.movies_arrange   {  
     position: absolute;
-  
-  background-color: burlywood;
-  height: 20rem;
-  width: 100%;
+
+overflow-x: auto;
+  height: 17rem;
+  width:100%;
   top:2rem;
-   
-.movies{
+  left: 10rem;
+}
+.movies_arrange::-webkit-scrollbar{
+    width: 0;
+}
+.movies_arrange , .movies_arrange1 ,  h2{
+    position: relative;
+    font-size: 1.5rem;
+    left: 1rem;
+}
+.movies_arrange1   {  
+    position: absolute;
+
+overflow-x: auto;
+  height: 18rem;
+  width: 100%;
+  top:22rem;
+  left: 1rem;
+}
+.movies_arrange1::-webkit-scrollbar{
+    width: 0;
+
+}
+
+.movies  {
     position: absolute;
   display: grid;
     height: 10rem;
     width: 12rem;
  
-    left: 10rem;
-    top:3rem;
-    border-radius: 6px;
-    grid-template-columns:repeat(5, 2fr) ;
-    grid-gap:15rem;
-}
-}
-.movie-image{
-    position: absolute;
-    width: 340px;
-    height: 200px;
-    object-fit: cover;
-    transition: all is ease-in-out;
-    border-radius: 20px;
-    max-width: 100%;
-    
+    left: 1rem;
+    top:4rem;
 
+    grid-template-columns:repeat(10, 1fr) ;
+    grid-gap:1rem;
 }
-.movie-title{
+
+.movie-image{
+    position: relative;
+    top:0rem;
+    left: 0rem;
+    transition:transform 0.25s ease;
+   max-width: 20rem;
+   min-height: 15rem;    
+    transition: all is ease-in-out;
+}
+.movie-image:hover{
+opacity: .5;
+cursor: pointer;
+}
+
+.series_arrange   {  
     position: absolute;
-    top:5rem;
+
+overflow-x: auto;
+  height: 18rem;
+  width: 100%;
+  top:40rem;
+  left: 1rem;
+}
+.series_arrange::-webkit-scrollbar{
+    width: 0;
+}
+
+.teens_arrange   {  
+    position: absolute;
+
+overflow-x: auto;
+  height: 18rem;
+  width: 100%;
+  top:60rem;
+  left: 1rem;
+}
+.teens_arrange::-webkit-scrollbar{
+    width: 0;
+}
+ .movie-image:hover {
+    -webkit-transform:scale(10.0); /* or some other value */
+    transform:scale(1.3);
 }
