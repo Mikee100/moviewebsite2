@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import './home.css'
 import {FaPlay} from 'react-icons/fa'
 import {FaInfoCircle} from 'react-icons/fa'
-import Carousel from 'react-multi-carousel';
+
 import 'react-multi-carousel/lib/styles.css';
 
 
 export default function Home() {
 
+
+ 
   const movies = [
   {
   id:1,
@@ -175,26 +177,22 @@ const Teens = [
 
 ];
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
 
+
+
+const  [modal, setModal] = useState(false);
+
+const toggleModal = () =>{
+
+  setModal(!modal)
+
+
+}
+
+const [popupcontent, setpopupcontent] = useState([]);
+const changecontent = (Teens) =>{
+  setpopupcontent([Teens]);
+}
 
 
   return (
@@ -217,7 +215,7 @@ const responsive = {
   
 <h2> Action Movies </h2>
 
-  <div className='movies'>
+  <div className='movies'  onClick={toggleModal} >
 
   
 {movies.map((movie) => (
@@ -243,13 +241,9 @@ const responsive = {
 
 </div>
 
-
-
-
-
-<div className='movies_arrange1'>  
+<div className='movies_arrange1' >  
 <h2> Comedy Movies </h2>
-<div className='movies'>
+<div className='movies' >
 
 
 {movies.map((movie) => (
@@ -275,11 +269,9 @@ const responsive = {
 
 </div>
 
-
-
 <div className='series_arrange'>  
 <h2>Series </h2>
-  <div className='movies'>
+  <div className='movies'  >
 
   
 {Series.map((series) => (
@@ -305,27 +297,22 @@ const responsive = {
 
 </div>
 
-
-
-
-
- 
 <div className='teens_arrange'>  
 <h2> Teens </h2>
 
-<div className='movies'>
+<div className='movies'   >
 
 
 {Teens.map((teens) => (
 
-<div className=""
+<div className=""   onClick={ () => changecontent(teens)}
  key={teens.id}>
 
   <img  
-    className="movie-image"
+    className="movie-image" 
     src={teens.image}
     alt={teens.image}
-    
+   
   />
  
 
@@ -339,6 +326,40 @@ const responsive = {
   
 
 </div>
+
+
+
+
+
+
+<div className='modal' onClick={toggleModal}   >
+  <div className='overlay' >
+    
+{popupcontent.map((pop) => (
+
+<div className=""
+ key={pop.id}>
+
+  <img  
+    className="movie-image" 
+    src={pop.image}
+    alt={pop.image}
+    
+  />
+ 
+
+</div>
+
+  ))}
+    
+    </div> 
+
+
+
+
+ </div>
+
+
 
 
 
