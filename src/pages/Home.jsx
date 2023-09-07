@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './home.css'
 import {FaPlay} from 'react-icons/fa'
 import {FaInfoCircle} from 'react-icons/fa'
+import {FaTimes} from 'react-icons/fa'
+
 
 import 'react-multi-carousel/lib/styles.css';
 
@@ -15,7 +17,10 @@ export default function Home() {
   id:1,
   title:"London Has Fallen",
   image:"/images/action1.webp",
-  about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+  about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+  year: 2017,
+  
+  
   },
 
 
@@ -23,42 +28,55 @@ export default function Home() {
     id:2,
     title:"Movie 2",
     image:"/images/action2.webp",
-    about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+    about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+    year: 2017,
+  
+
     },  
    
 {
       id:3,
       title:"Movie 3",
       image:"/images/action3.webp",
-      about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+      about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
+      year: 2017,
+    
       },
 
       {
         id:4,
         title:"Movie 4",
         image:"/images/action4.webp",
-        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
+        year: 2017,
+      
         },
 
         {
           id:5,
           title:"Movie 5",
           image:"/images/action5.webp",
-          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda "
+          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda " ,
+          year: 2017,
+        
           },
           
       {
         id:4,
         title:"Movie 4",
         image:"/images/action6.webp",
-        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
+        year: 2017,
+      
         },
 
         {
           id:5,
           title:"Movie 5",
           image:"/images/action8.webp",
-          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda "
+          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda " ,
+          year: 2017,
+        
           },
 
 
@@ -70,7 +88,9 @@ const Series = [
   id:1,
   title:"Movie 1",
   image:"/images/series1.webp",
-  about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+  about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
+  year: 2017,
+
   },
 
 
@@ -78,42 +98,54 @@ const Series = [
     id:2,
     title:"Movie 2",
     image:"/images/series2.webp",
-    about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+    about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+    year: 2017,
+  
     },  
    
 {
       id:3,
       title:"Movie 3",
       image:"/images/series3.webp",
-      about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+      about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
+      year: 2017,
+    
       },
 
       {
         id:4,
         title:"Movie 4",
         image:"/images/series4.webp",
-        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+        year: 2017,
+       
         },
 
         {
           id:5,
           title:"Movie 5",
           image:"/images/series6.webp",
-          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda "
+          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
+          year: 2017,
+         
           },
           
       {
         id:4,
         title:"Movie 4",
         image:"/images/series7.webp",
-        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+        year: 2017,
+       
         },
 
         {
           id:5,
           title:"Movie 5",
           image:"/images/series1.webp",
-          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda "
+          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
+          year: 2017,
+         
           },
 
 
@@ -126,7 +158,9 @@ const Teens = [
   id:1,
   title:"Movie 1",
   image:"/images/teen.webp",
-  about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+  about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+  year: 2017,
+ 
   },
 
 
@@ -134,42 +168,54 @@ const Teens = [
     id:2,
     title:"Movie 2",
     image:"/images/teen2.webp",
-    about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+    about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+    year: 2017,
+   
     },  
    
 {
       id:3,
       title:"Movie 3",
       image:"/images/teen5.webp",
-      about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+      about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+      year: 2017,
+     
       },
 
       {
         id:4,
         title:"Movie 4",
         image:"/images/teen7.webp",
-        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+        year: 2017,
+       
         },
 
         {
           id:5,
           title:"Movie 5",
           image:"/images/thumbbig-1325035.webp",
-          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda "
+          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
+          year: 2017,
+         
           },
           
       {
         id:4,
         title:"Movie 4",
         image:"/images/series7.webp",
-        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" 
+        about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
+        year: 2017,
+       
         },
 
         {
           id:5,
           title:"Movie 5",
           image:"/images/series1.webp",
-          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda "
+          about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
+          year: 2017,
+         
           },
 
 
@@ -190,8 +236,18 @@ const toggleModal = () =>{
 }
 
 const [popupcontent, setpopupcontent] = useState([]);
-const changecontent = (Teens) =>{
-  setpopupcontent([Teens]);
+const[styling, setstyling] = useState(null);
+
+const changecontent = (teens) =>{
+  setpopupcontent([teens]);
+  setModal(!modal);
+ if(styling === null){
+  setstyling({
+    position:"fixed",
+  });
+ }else{
+  setstyling(null);
+ }
 }
 
 
@@ -209,7 +265,7 @@ const changecontent = (Teens) =>{
             <button className='btn_moreinfo' > <FaInfoCircle className='fainfo'  />  <p>More Info</p>  </button>
 
 
-<div className='container_home' >
+<div className='container_home'   >
 
   <div className='movies_arrange'  >  
   
@@ -220,7 +276,7 @@ const changecontent = (Teens) =>{
   
 {movies.map((movie) => (
  
-  <div className="product"
+  <div className="product" onClick={ () => changecontent(movie)}
    key={movie.id}>
 
     <img  
@@ -248,7 +304,7 @@ const changecontent = (Teens) =>{
 
 {movies.map((movie) => (
 
-<div className="product"
+<div className="product" onClick={ () => changecontent(movie)}
  key={movie.id}>
 
   <img  
@@ -276,7 +332,7 @@ const changecontent = (Teens) =>{
   
 {Series.map((series) => (
  
-  <div className=""
+  <div className="" onClick={ () => changecontent(series)}
    key={series.id}>
 
     <img  
@@ -332,33 +388,46 @@ const changecontent = (Teens) =>{
 
 
 
-<div className='modal' onClick={toggleModal}   >
-  <div className='overlay' >
-    
-{popupcontent.map((pop) => (
+{ modal &&  (
+  <div className='modal'  onClick={toggleModal} >
 
-<div className=""
+    
+{popupcontent.map((pop) => {
+return(
+  <div className="popup_movie"
  key={pop.id}>
 
   <img  
-    className="movie-image" 
+    className="movie-image_popup" 
     src={pop.image}
     alt={pop.image}
     
   />
+  <p className='pop_title' >{pop.title }</p>
+  <p className='pop_about' >{pop.about}</p>
+  <p className='pop_year'  >{pop.year}</p>
  
+ <button onClick={changecontent} className='cross'  ><FaTimes/></button>
 
 </div>
+)
 
-  ))}
+
+}
+  
+
+
+
+  )}
     
     </div> 
 
+) 
 
 
 
+}
  </div>
-
 
 
 
@@ -370,7 +439,7 @@ const changecontent = (Teens) =>{
 
   </div>
 
-</div>
+
 
   )
 }

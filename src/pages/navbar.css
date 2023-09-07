@@ -84,3 +84,13 @@ color: white;
 .searchengine:hover .searchfa{
     left:1rem;
 }
+
+@media (max-width:700px) {
+    .nav ul{
+        display: none;
+    }
+    .nav h3{
+        left: 1rem;
+    }
+    
+}
