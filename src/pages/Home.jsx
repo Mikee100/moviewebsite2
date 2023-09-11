@@ -3,7 +3,8 @@ import './home.css'
 import {FaPlay} from 'react-icons/fa'
 import {FaInfoCircle} from 'react-icons/fa'
 import {FaTimes} from 'react-icons/fa'
-
+import {FaPlus} from 'react-icons/fa'
+import {FaRegThumbsUp} from 'react-icons/fa'
 
 import 'react-multi-carousel/lib/styles.css';
 
@@ -236,18 +237,11 @@ const toggleModal = () =>{
 }
 
 const [popupcontent, setpopupcontent] = useState([]);
-const[styling, setstyling] = useState(null);
 
 const changecontent = (teens) =>{
   setpopupcontent([teens]);
   setModal(!modal);
- if(styling === null){
-  setstyling({
-    position:"fixed",
-  });
- }else{
-  setstyling(null);
- }
+
 }
 
 
@@ -406,7 +400,9 @@ return(
   <p className='pop_title' >{pop.title }</p>
   <p className='pop_about' >{pop.about}</p>
   <p className='pop_year'  >{pop.year}</p>
- 
+  <button className='pop_btn_play' > < FaPlay className='faplay'  /> <p>Play</p> </button>
+ <FaPlus  className='addtolist' />
+ <FaRegThumbsUp className='thumbsup' />
  <button onClick={changecontent} className='cross'  ><FaTimes/></button>
 
 </div>
