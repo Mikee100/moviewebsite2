@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './home.css'
 import {FaPlay} from 'react-icons/fa'
 import {FaInfoCircle} from 'react-icons/fa'
@@ -16,10 +16,11 @@ export default function Home() {
   const movies = [
   {
   id:1,
-  title:"London Has Fallen",
+  title:"One Piecce",
   image:"/images/action1.webp",
   about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
   year: 2017,
+  video:"/images/ONE PIECE _ Official Trailer _ Netflix_HIGH.mp4",
   
   
   },
@@ -31,6 +32,7 @@ export default function Home() {
     image:"/images/action2.webp",
     about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
     year: 2017,
+    video:"/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
   
 
     },  
@@ -41,6 +43,7 @@ export default function Home() {
       image:"/images/action3.webp",
       about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
       year: 2017,
+      video:"/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
     
       },
 
@@ -50,6 +53,7 @@ export default function Home() {
         image:"/images/action4.webp",
         about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
         year: 2017,
+        video:"/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
       
         },
 
@@ -59,6 +63,7 @@ export default function Home() {
           image:"/images/action5.webp",
           about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda " ,
           year: 2017,
+          video:"/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
         
           },
           
@@ -68,6 +73,7 @@ export default function Home() {
         image:"/images/action6.webp",
         about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
         year: 2017,
+        video:"/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
       
         },
 
@@ -77,6 +83,7 @@ export default function Home() {
           image:"/images/action8.webp",
           about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda " ,
           year: 2017,
+            video:"/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
         
           },
 
@@ -87,21 +94,21 @@ export default function Home() {
 const Series = [
   {
   id:1,
-  title:"Movie 1",
+  title:"The Flash",
   image:"/images/series1.webp",
   about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
   year: 2017,
-
+  video:"/images/The Flash – Official Trailer_HIGH.mp4",
   },
 
 
 {
     id:2,
-    title:"Movie 2",
+    title:"Witcher",
     image:"/images/series2.webp",
     about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
     year: 2017,
-  
+    video:"/images/THE WITCHER _ MAIN TRAILER _ NETFLIX_HIGH.mp4",
     },  
    
 {
@@ -110,7 +117,7 @@ const Series = [
       image:"/images/series3.webp",
       about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda"  ,
       year: 2017,
-    
+      video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
       },
 
       {
@@ -119,7 +126,7 @@ const Series = [
         image:"/images/series4.webp",
         about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
         year: 2017,
-       
+        video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
         },
 
         {
@@ -128,7 +135,7 @@ const Series = [
           image:"/images/series6.webp",
           about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
           year: 2017,
-         
+          video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
           },
           
       {
@@ -137,7 +144,7 @@ const Series = [
         image:"/images/series7.webp",
         about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
         year: 2017,
-       
+        video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
         },
 
         {
@@ -146,7 +153,7 @@ const Series = [
           image:"/images/series1.webp",
           about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
           year: 2017,
-         
+          video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
           },
 
 
@@ -157,10 +164,11 @@ const Series = [
 const Teens = [
   {
   id:1,
-  title:"Movie 1",
+  title:"Titans",
   image:"/images/teen.webp",
   about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
   year: 2017,
+  video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
  
   },
 
@@ -171,7 +179,7 @@ const Teens = [
     image:"/images/teen2.webp",
     about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
     year: 2017,
-   
+    video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
     },  
    
 {
@@ -180,7 +188,7 @@ const Teens = [
       image:"/images/teen5.webp",
       about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
       year: 2017,
-     
+      video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
       },
 
       {
@@ -189,7 +197,7 @@ const Teens = [
         image:"/images/teen7.webp",
         about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
         year: 2017,
-       
+        video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
         },
 
         {
@@ -198,7 +206,7 @@ const Teens = [
           image:"/images/thumbbig-1325035.webp",
           about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
           year: 2017,
-         
+          video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
           },
           
       {
@@ -207,7 +215,7 @@ const Teens = [
         image:"/images/series7.webp",
         about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda" ,
         year: 2017,
-       
+        video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
         },
 
         {
@@ -216,7 +224,7 @@ const Teens = [
           image:"/images/series1.webp",
           about:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
           year: 2017,
-         
+          video:"/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
           },
 
 
@@ -244,18 +252,32 @@ const changecontent = (teens) =>{
 
 }
 
+const playvideocover = () =>{
+
+useEffect(() => {
+    const video = document.getElementById('video');
+    video.play();
+  }, []);
+}
+
+
+
 
   return (
 
-    <div >
+    <div> 
 
-    
-            <img src='\images\6-Underground-2.jpg' alt='' className='img_cover'  />
+<video controls width="100%"   className='img_cover' id='video' autoPlay muted >
+      <source  src='/images/6 Underground starring Ryan Reynolds _ Official Trailer _ Netflix.mp4' type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
+           
             <h2 className='movietitle' >6 UNDERGROUND</h2>
             <p className='movieabout' >This is a very sweet, interesting movie that every one should watch and appreciate since it has very good actors</p>
 
 
-            <button className='btn_play' > < FaPlay className='faplay'  /> <p>Play</p> </button>
+            <button className='btn_play' onClick={playvideocover} > < FaPlay className='faplay'  /> <p>Play</p> </button>
             <button className='btn_moreinfo' > <FaInfoCircle className='fainfo'  />  <p>More Info</p>  </button>
 
 
@@ -391,16 +413,17 @@ return(
   <div className="popup_movie"
  key={pop.id}>
 
-  <img  
-    className="movie-image_popup" 
-    src={pop.image}
-    alt={pop.image}
-    
-  />
+
+<video controls width="100%"   id='video'  autoPlay muted >
+      <source  src={pop.video} type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
+
   <p className='pop_title' >{pop.title }</p>
   <p className='pop_about' >{pop.about}</p>
   <p className='pop_year'  >{pop.year}</p>
-  <button className='pop_btn_play' > < FaPlay className='faplay'  /> <p>Play</p> </button>
+  <button className='pop_btn_play'onClick={pop.video} > < FaPlay className='faplay'  /> <p>Play</p> </button>
  <FaPlus  className='addtolist' />
  <FaRegThumbsUp className='thumbsup' />
  <button onClick={changecontent} className='cross'  ><FaTimes/></button>
