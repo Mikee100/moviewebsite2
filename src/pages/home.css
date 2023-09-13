@@ -15,7 +15,7 @@
 
 .movietitle{
     position: absolute;
-    top:10rem;
+    top:15rem;
     left: 8rem;
     height: 5rem;
     width: 12rem;
@@ -26,7 +26,7 @@
 }
 .movieabout{
     position: absolute;
-    top:19rem;
+    top:23rem;
     left: 8rem;
     height: 6rem;
     
@@ -35,7 +35,7 @@
 }
 .btn_play{
     position: absolute;
-    top:25rem;
+    top:30rem;
     left: 8rem;
     width: 8rem;
     border-radius: 6px;
@@ -61,7 +61,7 @@
 }
 .btn_moreinfo{
     position: absolute;
-    top:25rem;
+    top:30rem;
     left: 18rem;
     width: 10rem;
     border-radius: 6px;
@@ -233,9 +233,10 @@ background-color: rgba(0,0,0,0.6);
 }
 .popup_movie{
     position: absolute;
+    background-color: rgba(0,0,0,0.9);
     top: 0rem;
-    left: 10rem;
-    height: 50rem;
+    left: 8rem;
+    height: 60rem;
     width: 70rem;
     border: 2px solid rgb(58, 53, 53);
     border-radius: 7px;
@@ -300,7 +301,7 @@ background-color: rgba(255, 255, 255, 0.1);
 }
 .pop_about{
     position: absolute;
-    top:43rem;
+    top:48rem;
     height: 5rem;
     width: 24rem;
     left: 2rem;
@@ -321,15 +322,48 @@ background-color: rgba(255, 255, 255, 0.1);
     height: 30rem;
     left: 0rem;
     top:0;
-    box-shadow: 0px 40px 100px black;
+    box-shadow: 0px 40px 100px blue;
 }
 .pop_year{
     position: absolute;
-    color: white;
+    color: grey;
     top:40rem;
     left:2rem;
     font-size: 1.4rem;
 
+}
+.pop_cast{
+    position: absolute;
+    top:41rem;
+    left: 40rem;
+    height: 5rem;
+    width: 30rem;
+ 
+}
+.pop_cast p {
+    position: absolute;
+    color: grey;
+    top:-0.2rem;
+    left: -2.7rem;
+    font-size: 1.2rem;
+}
+.watchnow{
+    position: absolute;
+    top:43rem;
+    left: 2rem;
+    font-size:2.3rem;
+}
+.pop_genre{
+    position: absolute;
+    top:46rem;
+    left: 41rem; 
+}
+.pop_genre p {
+    position: absolute;
+    color: grey;
+    top:-0.2rem;
+    left: -3.5rem;
+    font-size: 1.2rem;
 }
 .pop_btn_play{
     position: absolute;
