@@ -10,12 +10,12 @@ function App() {
 
     <>
     <BrowserRouter>
-    <Navbar />
+   
  
     
    <Routes>
       <Route path='/navbar' element={<Navbar /> }  />  
-      <Route path='/home' element={<Home /> }  />  
+      <Route path='/' element={<Home /> }  />  
     </Routes>
     
     

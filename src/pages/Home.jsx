@@ -5,7 +5,8 @@ import {FaInfoCircle} from 'react-icons/fa'
 import {FaTimes} from 'react-icons/fa'
 import {FaPlus} from 'react-icons/fa'
 import {FaRegThumbsUp} from 'react-icons/fa'
-
+import {RiNetflixFill} from 'react-icons/ri'
+import Navbar from './Navbar'
 import 'react-multi-carousel/lib/styles.css';
 
 
@@ -295,6 +296,8 @@ const changecontent = (teens) =>{
   setModal(!modal);
 
 }
+  
+
 
 const playvideocover = () =>{
 
@@ -312,7 +315,7 @@ const [searchTerm, setSearchTerm] = useState("");
 
     <div> 
 
-<video controls width="100%"   className='img_cover' id='video' autoPlay muted >
+<video controls width="100%"   className='video_cover' id='video' autoPlay muted >
       <source  src='/images/6 Underground starring Ryan Reynolds _ Official Trailer _ Netflix.mp4' type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.
     </video>
@@ -347,7 +350,7 @@ const [searchTerm, setSearchTerm] = useState("");
       
     />
    
-
+   <RiNetflixFill className='netflix_icons' />
   </div>
   
     ))}
@@ -367,14 +370,14 @@ const [searchTerm, setSearchTerm] = useState("");
 
 <div className="product" onClick={ () => changecontent(movie)}
  key={movie.id}>
-
+   
   <img  
     className="movie-image"
     src={movie.image}
     alt={movie.image}
     
   />
- 
+  <RiNetflixFill className='netflix_icons' />
 
 </div>
 
@@ -395,14 +398,14 @@ const [searchTerm, setSearchTerm] = useState("");
  
   <div className="" onClick={ () => changecontent(series)}
    key={series.id}>
-
+   
     <img  
       className="movie-image"
       src={series.image}
       alt={series.image}
       
     />
-   
+    <RiNetflixFill className='netflix_icons' />
 
   </div>
   
@@ -424,14 +427,15 @@ const [searchTerm, setSearchTerm] = useState("");
 
 <div className=""   onClick={ () => changecontent(teens)}
  key={teens.id}>
-
+ 
   <img  
+  
     className="movie-image" 
     src={teens.image}
     alt={teens.image}
    
   />
- 
+    <RiNetflixFill className='netflix_icons' />
 
 </div>
 
@@ -449,17 +453,17 @@ const [searchTerm, setSearchTerm] = useState("");
 
 
 
+
 { modal &&  (
   <div className='modal'  onClick={toggleModal} >
 
-    
 {popupcontent.map((pop) => {
 return(
   <div className="popup_movie"
  key={pop.id}>
 
 
-<video controls width="100%"   id='video'  autoPlay muted >
+<video controls width="100%"   id='video' className='pop_video' autoPlay muted >
       <source  src={pop.video} type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.
     </video>
@@ -496,8 +500,8 @@ return(
  </div>
 
 
-
-
+ 
+ <Navbar />
 
   </div>
 
