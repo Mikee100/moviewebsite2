@@ -1,23 +1,15 @@
 
 
 .nav{
-    position: fixed;
-   
-
-
+    position: absolute;
   top:0rem;
   height: 5rem;
   width: 100%;
   opacity: 1;
 color: white;
+
 }
-@media (max-height:10px) {
-.nav{
-    position: fixed;
-    background-color: aqua;
-}
-    
-}
+
 
 .nav ul{
    
