@@ -463,7 +463,7 @@ return(
  key={pop.id}>
 
 
-<video controls width="100%"   id='video' className='pop_video' autoPlay muted >
+<video controls width="100%"   id='video' className='pop_video' autoPlay >
       <source  src={pop.video} type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.
     </video>
