@@ -6,274 +6,12 @@ import { FaTimes } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { RiNetflixFill } from "react-icons/ri";
-import Navbar from "./Navbar";
 import "react-multi-carousel/lib/styles.css";
+import movies from "../data/movies";
+import Series from "../data/series";
+import Teens from "../data/teens";
 
 export default function Home() {
-  const movies = [
-    {
-      id: 1,
-      title: "One Piecce",
-      image: "/images/action1.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/ONE PIECE _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 2,
-      title: "Movie 2",
-      image: "/images/action2.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video:
-        "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
-    },
-
-    {
-      id: 3,
-      title: "Movie 3",
-      image: "/images/action3.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video:
-        "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
-    },
-
-    {
-      id: 4,
-      title: "Movie 4",
-      image: "/images/action4.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video:
-        "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
-    },
-
-    {
-      id: 5,
-      title: "Movie 5",
-      image: "/images/action5.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video:
-        "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
-    },
-
-    {
-      id: 4,
-      title: "Movie 4",
-      image: "/images/action6.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video:
-        "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
-    },
-
-    {
-      id: 5,
-      title: "Movie 5",
-      image: "/images/action8.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video:
-        "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
-    },
-  ];
-  const Series = [
-    {
-      id: 1,
-      title: "The Flash",
-      image: "/images/series1.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/The Flash – Official Trailer_HIGH.mp4",
-    },
-
-    {
-      id: 2,
-      title: "Witcher",
-      image: "/images/series2.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/THE WITCHER _ MAIN TRAILER _ NETFLIX_HIGH.mp4",
-    },
-
-    {
-      id: 3,
-      title: "Movie 3",
-      image: "/images/series3.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 4,
-      title: "Movie 4",
-      image: "/images/series4.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 5,
-      title: "Movie 5",
-      image: "/images/series6.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 4,
-      title: "Movie 4",
-      image: "/images/series7.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 5,
-      title: "Movie 5",
-      image: "/images/series1.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-  ];
-
-  const Teens = [
-    {
-      id: 1,
-      title: "Titans",
-      image: "/images/teen.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-    },
-
-    {
-      id: 2,
-      title: "Movie 2",
-      image: "/images/teen2.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-    },
-
-    {
-      id: 3,
-      title: "Movie 3",
-      image: "/images/teen5.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 4,
-      title: "Movie 4",
-      image: "/images/teen7.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 5,
-      title: "Movie 5",
-      image: "/images/thumbbig-1325035.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 4,
-      title: "Movie 4",
-      image: "/images/series7.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-
-    {
-      id: 5,
-      title: "Movie 5",
-      image: "/images/series1.webp",
-      about:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto nulla autem libero temporibus facilis porro assumenda ",
-      year: "2017 Limited Series HD",
-      cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
-      genre: "Action, Drama, Thriller",
-      video: "/images/Titans _ Official Trailer _ Netflix_HIGH.mp4",
-    },
-  ];
-
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -287,14 +25,25 @@ export default function Home() {
     setModal(!modal);
   };
 
+
+  const [contentup, setcontent1] = useState([]);
+
+  const content1 = (Series) => {
+    setcontent1([Series]);
+    setModal(!modal);
+  };
+
+
+
+
+
+
   const playvideocover = () => {
     useEffect(() => {
       const video = document.getElementById("video");
       video.play();
     }, []);
   };
-
-  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <div>
@@ -329,9 +78,8 @@ export default function Home() {
       </button>
 
       <div className="container_home">
-
         <div className="movies_arrange">
-          <h2  > Action Movies </h2>
+          <h2> Action Movies </h2>
 
           <div className="movies" onClick={toggleModal}>
             {movies.map((movie) => (
@@ -378,7 +126,7 @@ export default function Home() {
             {Series.map((series) => (
               <div
                 className=""
-                onClick={() => changecontent(series)}
+                onClick={() => content1(series)}
                 key={series.id}
               >
                 <img
@@ -424,6 +172,7 @@ export default function Home() {
                     id="video"
                     className="pop_video"
                     autoPlay
+                    muted
                   >
                     <source src={pop.video} type="video/mp4" />
                     Sorry, your browser doesn't support embedded videos.
@@ -456,9 +205,63 @@ export default function Home() {
             })}
           </div>
         )}
+
+
+
+
+{modal && (
+          <div className="modal" onClick={toggleModal}>
+            {contentup.map((show) => {
+              return (
+                <div className="popup_movie" key={show.id}>
+                
+                  <video
+                    controls
+                    width="100%"
+                    id="video"
+                    className="pop_video"
+                    autoPlay
+                    muted
+                  >
+                    <source src={show.video} type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                  </video>
+
+                  <p className="pop_title">{show.title}</p>
+                  <p className="pop_about">{show.about}</p>
+                  <p className="pop_year">{show.year}</p>
+                  <p className="pop_cast">
+                 
+                    <p>Cast:</p> {show.cast}
+                  </p>
+                  <p className="pop_genre">
+                    {" "}
+                    <p>Genre:</p> {show.genre}
+                  </p>
+
+                  <p className="watchnow">Watch the Movie</p>
+                  <button className="pop_btn_play" onClick={show.video}>
+                    {" "}
+                    <FaPlay className="faplay" /> <p>Play</p>{" "}
+                  </button>
+                  <FaPlus className="addtolist" />
+                  <FaRegThumbsUp className="thumbsup" />
+                  <button onClick={changecontent} className="cross">
+                    <FaTimes />
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+
+
+
+
+
+
       </div>
-
-
     </div>
   );
 }
