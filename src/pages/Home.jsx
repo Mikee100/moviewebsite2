@@ -26,13 +26,6 @@ export default function Home() {
   };
 
 
-  const [contentup, setcontent1] = useState([]);
-
-  const content1 = (Series) => {
-    setcontent1([Series]);
-    setModal(!modal);
-  };
-
 
 
 
@@ -126,7 +119,7 @@ export default function Home() {
             {Series.map((series) => (
               <div
                 className=""
-                onClick={() => content1(series)}
+                onClick={() => changecontent(series)}
                 key={series.id}
               >
                 <img
@@ -192,55 +185,6 @@ export default function Home() {
 
                   <p className="watchnow">Watch the Movie</p>
                   <button className="pop_btn_play" onClick={pop.video}>
-                    {" "}
-                    <FaPlay className="faplay" /> <p>Play</p>{" "}
-                  </button>
-                  <FaPlus className="addtolist" />
-                  <FaRegThumbsUp className="thumbsup" />
-                  <button onClick={changecontent} className="cross">
-                    <FaTimes />
-                  </button>
-                </div>
-              );
-            })}
-          </div>
-        )}
-
-
-
-
-{modal && (
-          <div className="modal" onClick={toggleModal}>
-            {contentup.map((show) => {
-              return (
-                <div className="popup_movie" key={show.id}>
-                
-                  <video
-                    controls
-                    width="100%"
-                    id="video"
-                    className="pop_video"
-                    autoPlay
-                    muted
-                  >
-                    <source src={show.video} type="video/mp4" />
-                    Sorry, your browser doesn't support embedded videos.
-                  </video>
-
-                  <p className="pop_title">{show.title}</p>
-                  <p className="pop_about">{show.about}</p>
-                  <p className="pop_year">{show.year}</p>
-                  <p className="pop_cast">
-                 
-                    <p>Cast:</p> {show.cast}
-                  </p>
-                  <p className="pop_genre">
-                    {" "}
-                    <p>Genre:</p> {show.genre}
-                  </p>
-
-                  <p className="watchnow">Watch the Movie</p>
-                  <button className="pop_btn_play" onClick={show.video}>
                     {" "}
                     <FaPlay className="faplay" /> <p>Play</p>{" "}
                   </button>
