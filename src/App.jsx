@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
 import Mylist from "./pages/Mylist";
+import MovieList from "./pages/MovieList";
 function App() {
   return (
     <>
@@ -10,8 +11,9 @@ function App() {
 
 
         <Routes>
-          <Route path="/navbar" element={<Navbar />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/navbar" element={<Navbar />} />
+          <Route path="/movielist" element={<MovieList />} />
           <Route path="/mylist" element={<Mylist />} />
         </Routes>
         < Navbar />

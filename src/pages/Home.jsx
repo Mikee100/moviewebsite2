@@ -94,7 +94,7 @@ export default function Home() {
         </div>
 
         <div className="movies_arrange1">
-          <h2> Comedy Movies </h2>
+          <h2> Comedy   Movies </h2>
           <div className="movies">
             {movies.map((movie) => (
               <div

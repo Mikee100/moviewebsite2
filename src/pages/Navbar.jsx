@@ -15,7 +15,7 @@ export default function Navbar() {
           <li> Home </li>{" "}
         </Link>
         <li> Tv Shows </li>
-        <li> Movies </li>
+       <Link to="./movielist" style={{ color: "white" }} ><li> Movies </li></Link> 
 
         <li> News & Popular </li>
        <Link to='./mylist' style={{ color: "white" }}><li> My List </li></Link> 
