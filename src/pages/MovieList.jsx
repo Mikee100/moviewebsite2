@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import movies from "../data/movies";
 import { FaPlay } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -18,12 +18,9 @@ export default function MovieList() {
     setModal(!modal);
   };
 
-
   return (
     <div>
       <div className="container">
-        
-        
         {movies ? (
           <div>
             <video
@@ -47,16 +44,32 @@ export default function MovieList() {
         ) : (
           <p>Movie not found</p>
         )}
-        <h2 className="movie_genre" >Movies</h2>
-        <div className="subgenre" >
-    
+        <h2 className="movie_genre">Movies</h2>
+        <div className="subgenre" onClick={toggleModal}>
+          {modal && (
+            <section>
+              <option>Action</option>
+              <option>Comedy</option>
+              <option>Drama</option>
+              <option>Thriller</option>
+              <option>Action</option>
+              <option>Comedy</option>
+              <option>Drama</option>
+              <option>Thriller</option>
+              <option>Action</option>
+              <option>Comedy</option>
+              <option>Drama</option>
+              <option>Thriller</option>
+              <option>Action</option>
+              <option>Comedy</option>
+              <option>Drama</option>
+            </section>
+          )}
 
-            <p>Genres < IoMdArrowDropdown className="fa_down" />
-</p>
-           
+          <p>
+            Genres <IoMdArrowDropdown className="fa_down" />
+          </p>
         </div>
-
-
 
         <button className="list_btn_play">
           {" "}
@@ -66,7 +79,24 @@ export default function MovieList() {
           {" "}
           <FaInfoCircle className="list_fainfo" /> <p>More Info</p>{" "}
         </button>
+
+        <div>
+          {movies.map((action) => (
+            <div
+            className="product"
+          
+            key={action.id}
+          >
+            <img
+              className="movie-image"
+              src={action.image}
+              alt={action.image}
+            />
+          </div>
+          ) )}
+        </div>
       </div>
+
     </div>
   );
 }

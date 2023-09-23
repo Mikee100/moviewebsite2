@@ -11,7 +11,7 @@
   list-style-type: none;
   height: 5rem;
   width: 100%;
-  top: 0.6rem;
+  top: 0rem;
   position: absolute;
   display: flex;
 }
@@ -19,20 +19,21 @@
   position: relative;
 
   margin: 10px;
-  left: 13rem;
+  left: 10rem;
   top: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .nav h3 {
   position: absolute;
   display: inline-block;
  color: #e50914;
-  font-size: 1.8em;
+  font-size: 1.9rem;
   flex-grow: 1;
   top: 1rem;
   left: 4rem;
   vertical-align: middle;
+ 
 }
 .bellfa {
   position: absolute;
