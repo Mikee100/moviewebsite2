@@ -77,7 +77,7 @@ export default function Home() {
           <div className="movies" onClick={toggleModal}>
             {movies.map((movie) => (
               <div
-                className="product"
+                className="id"
                 onClick={() => changecontent(movie)}
                 key={movie.id}
               >

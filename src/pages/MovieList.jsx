@@ -6,11 +6,14 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import "../styles/movielist.css";
 import { FaInfoCircle } from "react-icons/fa";
 
-const getMovieById = (id) => {
-  return movies.find((movie) => movie.id === id);
-};
+//const getMovieById = (id) => {
+    //return movies.find((action) => action.id === id);
+//  };
+  
+
 export default function MovieList() {
-  const movies = getMovieById(2);
+  
+  //const movies = getMovieById(2);
 
   const [modal, setModal] = useState(false);
 
@@ -20,7 +23,7 @@ export default function MovieList() {
 
   return (
     <div>
-      <div className="container">
+      <div className="container_movies">
         {movies ? (
           <div>
             <video
@@ -80,21 +83,81 @@ export default function MovieList() {
           <FaInfoCircle className="list_fainfo" /> <p>More Info</p>{" "}
         </button>
 
-        <div>
-          {movies.map((action) => (
-            <div
-            className="product"
-          
-            key={action.id}
-          >
-            <img
-              className="movie-image"
-              src={action.image}
-              alt={action.image}
-            />
-          </div>
-          ) )}
+
+        <div className="movie_container" >
+          <h2>Popular on Netflix</h2>
+         <div className="list_movie_arrange" > 
+         {movies.map((movie) => (
+              <div
+                className="list_movies"
+              
+                key={movie.id}
+
+              >
+              
+                <img
+                  className="movie-image"
+                  src={movie.image}
+                  alt={movie.image}
+                />
+
+                
+              </div>
+            ))}
+        
+       
+         </div>
+
+         </div>
+
+         <div className="action_container" >
+         <div className="action_arrange" > 
+         <h2>Action Movies </h2>
+         {movies.map((movie) => (
+              <div
+                className="list_movies"
+              
+                key={movie.id}
+
+              >
+              
+                <img
+                  className="movie-image"
+                  src={movie.image}
+                  alt={movie.image}
+                />
+
+                
+              </div>
+            ))}
+        
         </div>
+         </div>
+
+         <div className="series_container" >
+         <div className="action_arrange" > 
+         <h2>Action Movies </h2>
+         {movies.map((movie) => (
+              <div
+                className="list_movies"
+              
+                key={movie.id}
+
+              >
+              
+                <img
+                  className="movie-image"
+                  src={movie.image}
+                  alt={movie.image}
+                />
+
+                
+              </div>
+            ))}
+        
+        </div>
+         </div>
+
       </div>
 
     </div>

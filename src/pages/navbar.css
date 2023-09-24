@@ -20,8 +20,8 @@
 
   margin: 10px;
   left: 10rem;
-  top: 1rem;
-  font-size: 1rem;
+  top: 1.2rem;
+  font-size: .8rem;
 }
 
 .nav h3 {
@@ -37,7 +37,7 @@
 }
 .bellfa {
   position: absolute;
-  left: 73rem;
+  left: 68rem;
   top: 2rem;
   font-size: 1.6rem;
   cursor: pointer;
@@ -49,7 +49,7 @@
   top: 1.5rem;
   width: 15rem;
   display: flex;
-  left: 57rem;
+  left: 50rem;
 }
 .searchfa {
   position: absolute;

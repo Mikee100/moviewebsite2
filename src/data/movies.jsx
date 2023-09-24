@@ -9,6 +9,7 @@ const movies = [
       cast: "Chris Hemsworth, Chris Pratt ,Angelina Jolie ,John Cena ,Dwayne Johnson ,Kevin Hart ,Ice Cube ",
       genre: "Action, Drama, Thriller",
       video: "/images/ONE PIECE _ Official Trailer _ Netflix_HIGH.mp4",
+      number: "1",
     },
 
     {
@@ -22,6 +23,7 @@ const movies = [
       genre: "Action, Drama, Thriller",
       video:
         "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
+        number: "2",
     },
 
     {
@@ -35,6 +37,7 @@ const movies = [
       genre: "Action, Drama, Thriller",
       video:
         "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
+        number: "3",
     },
 
     {
@@ -48,6 +51,7 @@ const movies = [
       genre: "Action, Drama, Thriller",
       video:
         "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
+        number: "4",
     },
 
     {
@@ -61,6 +65,7 @@ const movies = [
       genre: "Action, Drama, Thriller",
       video:
         "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
+        number: "5",
     },
 
     {
@@ -74,6 +79,7 @@ const movies = [
       genre: "Action, Drama, Thriller",
       video:
         "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
+        number: "6",
     },
 
     {
@@ -87,6 +93,7 @@ const movies = [
       genre: "Action, Drama, Thriller",
       video:
         "/images/Extraction _ Official Trailer _ Screenplay by JOE RUSSO Directed by SAM HARG_HIGH.mp4",
+        number: "7",
     },
   ];
 

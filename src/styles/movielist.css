@@ -1,9 +1,8 @@
-.container {
+.container_movies {
   position: absolute;
   top: 5rem;
   height: 60rem;
   width: 100%;
-  background-color: aqua;
 
   font-size: 3rem;
 }
@@ -168,3 +167,101 @@ option {
   left: 1rem;
   font-weight: 500;
 }
+.video{
+  position: absolute;
+  top:20rem;
+}
+.movie_container{
+  position: absolute;
+  top: 38rem; 
+  overflow-x: auto;
+  height: 22rem;
+
+  width: 100%;
+}
+
+.movie_container::-webkit-scrollbar {
+  width: 0;
+}
+.movie_container h2{
+  position: absolute;
+  top:1rem;
+ 
+}
+
+.list_movie_arrange{
+  position: relative;
+  top: 4rem;
+  left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1rem;
+ 
+ 
+}
+.list_movies{
+  position: relative;
+  font-size: 2rem;
+
+  width: 20rem;
+ 
+
+}
+.movie-image{
+position: relative;
+height: 0rem;
+  width: 20rem;
+
+}
+
+.action_container{
+  position: relative;
+  top: 61rem;
+  left: 0rem;
+
+  overflow-x: auto;
+  height: 21rem;
+ 
+ 
+ 
+}
+.action_arrange{
+  top: 4rem;
+  left: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1rem;
+  
+}
+.action_container::-webkit-scrollbar {
+  width: 0;
+}
+.action_container h2{
+  position: absolute;
+  top:-3rem;
+ 
+}
+
+.series_container{
+  position: absolute;
+  top: 84rem;
+  width: 100%;
+  left: 0rem;
+
+  overflow-x: auto;
+  height: 22rem;
+}
+.series_container h2{
+  position: absolute;
+  top:-4rem;
+  font-weight: 700;
+  font-size: 1.9rem;
+  left: 1rem;
+  overflow-y: auto;
+
+}
+.series_container::-webkit-scrollbar{
+  width: 0;
+}
+
