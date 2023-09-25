@@ -167,13 +167,13 @@ option {
   left: 1rem;
   font-weight: 500;
 }
-.video{
+.video {
   position: absolute;
-  top:20rem;
+  top: 20rem;
 }
-.movie_container{
+.movie_container {
   position: absolute;
-  top: 38rem; 
+  top: 38rem;
   overflow-x: auto;
   height: 22rem;
 
@@ -183,85 +183,78 @@ option {
 .movie_container::-webkit-scrollbar {
   width: 0;
 }
-.movie_container h2{
+.movie_container h2 {
   position: absolute;
-  top:1rem;
- 
+  top: 1rem;
 }
 
-.list_movie_arrange{
+.list_movie_arrange {
   position: relative;
   top: 4rem;
   left: 1rem;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 1rem;
- 
- 
 }
-.list_movies{
+.list_movies {
   position: relative;
   font-size: 2rem;
 
   width: 20rem;
- 
-
 }
-.movie-image{
-position: relative;
-height: 0rem;
-  width: 20rem;
-
-}
-
-.action_container{
+.movie-image {
   position: relative;
-  top: 61rem;
-  left: 0rem;
-
-  overflow-x: auto;
-  height: 21rem;
- 
- 
- 
+  height: 0rem;
+  width: 20rem;
 }
-.action_arrange{
+
+.action_container {
+  position: relative;
+  top: 57rem;
+  left: 0rem;
+  height: 10rem;
+  overflow-x: auto;
+  height: 24rem;
+}
+.action_arrange {
   top: 4rem;
   left: 1rem;
   position: relative;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 1rem;
-  
 }
 .action_container::-webkit-scrollbar {
   width: 0;
 }
-.action_container h2{
+.action_container h2 {
   position: absolute;
-  top:-3rem;
- 
+  top: -3rem;
 }
 
-.series_container{
+.episode_name{
   position: absolute;
-  top: 84rem;
-  width: 100%;
-  left: 0rem;
-
-  overflow-x: auto;
-  height: 22rem;
-}
-.series_container h2{
-  position: absolute;
-  top:-4rem;
+  top:54rem;
+  font-size: 1.4rem;
+  left: 2rem;
   font-weight: 700;
-  font-size: 1.9rem;
+}
+.season_name{
+  position: absolute;
+  right: 10rem;
+  top: 53rem;
+  background-color: grey;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 6px;
+
+}
+.season_name p{
+  position: absolute;
   left: 1rem;
-  overflow-y: auto;
+  top: .4rem;
+   font-weight: 700;
+  font-size: 1.4rem;
+
 
 }
-.series_container::-webkit-scrollbar{
-  width: 0;
-}
-

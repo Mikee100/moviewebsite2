@@ -110,14 +110,13 @@
 /* ************ movies arranged**********************************/
 .container_home {
   position: absolute;
-  top: 40rem;
+  top: 35rem;
   height: 100rem;
   width: 100%;
- 
 }
 .netflix_icons {
   position: relative;
-  top: -14.5rem;
+  top: -11.5rem;
   font-size: 1.6rem;
   color: red;
   left: 0.3rem;
@@ -128,7 +127,7 @@
   overflow-x: auto;
   height: 22rem;
   width: 100%;
-  top: 3rem;
+  top: 0rem;
   left: 10rem;
 }
 .movies_arrange::-webkit-scrollbar {
@@ -148,7 +147,7 @@ h2 {
   overflow-x: auto;
   height: 22rem;
   width: 100%;
-  top: 22rem;
+  top: 17rem;
   left: 1rem;
 }
 .movies_arrange1::-webkit-scrollbar {
@@ -174,7 +173,7 @@ h2 {
   left: 0rem;
   transition: transform 0.25s ease;
   max-width: 20rem;
-  min-height: 15rem;
+  min-height: 12rem;
   transition: all is ease-in-out;
   border-radius: 7px;
 }
@@ -189,7 +188,7 @@ h2 {
   overflow-x: auto;
   height: 22rem;
   width: 100%;
-  top: 40rem;
+  top: 33rem;
   left: 1rem;
 }
 .series_arrange::-webkit-scrollbar {
@@ -202,7 +201,7 @@ h2 {
   overflow-x: auto;
   height: 22rem;
   width: 100%;
-  top: 60rem;
+  top: 50rem;
   left: 1rem;
 }
 .teens_arrange::-webkit-scrollbar {
@@ -228,9 +227,9 @@ h2 {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.9);
   top: 1rem;
-  left: 4.5rem;
+  left: 4rem;
   height: 60rem;
-  width: 70rem;
+  width: 65rem;
   border: 2px solid rgb(58, 53, 53);
   border-radius: 7px;
   overflow-y: auto;
@@ -256,7 +255,7 @@ h2 {
 .cross {
   position: absolute;
   top: 2rem;
-  left: 65rem;
+  left: 60rem;
   background-color: black;
   color: white;
   padding: 8px;
@@ -328,7 +327,7 @@ h2 {
   top: 41rem;
   left: 40rem;
   height: 5rem;
-  width: 30rem;
+  width: 20rem;
 }
 .pop_cast p {
   position: absolute;
