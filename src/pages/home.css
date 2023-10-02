@@ -261,6 +261,7 @@ h2 {
   padding: 8px;
   border-radius: 30%;
   border-width: 2px;
+  font-size: 1.2rem;
 }
 .cross:hover {
   background-color: white;
@@ -284,7 +285,7 @@ h2 {
   color: white;
   padding: 8px;
   border-radius: 40%;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 .addtolist:hover,
 .thumbsup:hover {
@@ -297,6 +298,7 @@ h2 {
   height: 5rem;
   width: 24rem;
   left: 2rem;
+  font-size: 1rem;
 }
 .pop_title {
   position: absolute;
@@ -328,6 +330,7 @@ h2 {
   left: 40rem;
   height: 5rem;
   width: 20rem;
+  font-size: 1rem;
 }
 .pop_cast p {
   position: absolute;
@@ -346,6 +349,7 @@ h2 {
   position: absolute;
   top: 46rem;
   left: 41rem;
+  font-size:1rem ;
 }
 .pop_genre p {
   position: absolute;
