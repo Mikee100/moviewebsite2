@@ -1,5 +1,6 @@
 const movies = [
     {
+      categories: "actions",
       id: 1,
       title: "One Piecce",
       image: "/images/action1.webp",
@@ -13,6 +14,7 @@ const movies = [
     },
 
     {
+      categories: "actions",
       id: 2,
       title: "Movie 2",
       image: "/images/action2.webp",
@@ -27,6 +29,7 @@ const movies = [
     },
 
     {
+      categories: "actions",
       id: 3,
       title: "Movie 3",
       image: "/images/action3.webp",
@@ -41,6 +44,7 @@ const movies = [
     },
 
     {
+      categories: "actions",
       id: 4,
       title: "Movie 4",
       image: "/images/action4.webp",

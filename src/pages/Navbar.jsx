@@ -3,6 +3,7 @@ import "./navbar.css";
 import { FaSearch } from "react-icons/fa";
 import { FaRegBell } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import movies from "../data/movies";
 
 export default function Navbar() {
   // const [searchTerm, setSearchTerm] = useState("");
@@ -38,21 +39,37 @@ export default function Navbar() {
 
       <FaRegBell className="bellfa" />
 
-      {/*
+    {/**
         <div className='search'>
       
-  {
-    movies.filter((val) => {
-      if(searchTerm == ""){
-        return val;
-      }else if(val.title.toLowerCase().includes(searchTerm.to())){
-        return val;
-      }
-    }  )
-  }
+        {movies.movies
+          // eslint-disable-next-line
+          .filter((movie) => {
+            if (
+              movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+            ) {
+              return movie;
+            }
+          })
+          .map((movie) => (
+            <div className="product" key={movie.id}>
+              <img
+                className="product-image"
+                src={movie.image}
+                alt={movie.image}
+              />
+              <h4 className="product-title">{movie.title}</h4>
+            </div>
+          )) 
+           }
+
+
+
+
 
 </div>
-*/}
+ */}
+
     </div>
   );
-}
+        }
